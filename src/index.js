@@ -3,6 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './App';
 
+import './App.css';
+
 class H2O extends React.Component {
   constructor(props) {
     super(props);
@@ -23,7 +25,7 @@ class H2O extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className={this.H2OState(this.state.temp)}>
         <h2>
           phase: {this.H2OState(this.state.temp)},{this.state.temp} ℃
         </h2>
